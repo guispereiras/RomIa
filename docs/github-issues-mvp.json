@@ -1,0 +1,72 @@
+[
+  {
+    "title": "[Sprint 0] Configurar CI mínima (lint + typecheck)",
+    "labels": ["backend", "mobile", "devops", "sprint-0"],
+    "body": "## Objetivo\nCriar pipeline mínima para validar qualidade em PRs.\n\n## Tarefas\n- [ ] Rodar `pnpm -r lint`\n- [ ] Rodar `pnpm -r typecheck`\n- [ ] Falhar pipeline em erro\n\n## Critérios de aceite\n- PR só passa quando lint e typecheck estiverem ok."
+  },
+  {
+    "title": "[Sprint 0] Criar templates de issue/PR + convenção de branches",
+    "labels": ["process", "sprint-0"],
+    "body": "## Objetivo\nPadronizar fluxo de trabalho do time.\n\n## Tarefas\n- [ ] Template de issue\n- [ ] Template de PR\n- [ ] Estratégia de branch (feature/, fix/, chore/)\n\n## Critérios de aceite\n- Novas issues e PRs seguem template automaticamente."
+  },
+  {
+    "title": "[Sprint 1] Backend: Auth JWT + refresh token",
+    "labels": ["backend", "auth", "sprint-1"],
+    "body": "## Objetivo\nPermitir autenticação segura.\n\n## Tarefas\n- [ ] Endpoints signup/login/refresh\n- [ ] Hash de senha\n- [ ] Guard de autenticação\n\n## Critérios de aceite\n- Usuário consegue autenticar e renovar sessão sem relogar."
+  },
+  {
+    "title": "[Sprint 1] Backend: Modelar User, StudentProfile e LearningGoal",
+    "labels": ["backend", "database", "sprint-1"],
+    "body": "## Objetivo\nPersistir identidade e meta do aluno.\n\n## Tarefas\n- [ ] Criar schema e migrations\n- [ ] Relacionamentos básicos\n- [ ] Seeds de desenvolvimento\n\n## Critérios de aceite\n- Entidades persistidas e consultáveis via API."
+  },
+  {
+    "title": "[Sprint 1] Mobile: fluxo de login/cadastro",
+    "labels": ["mobile", "auth", "sprint-1"],
+    "body": "## Objetivo\nHabilitar entrada de usuários no app.\n\n## Tarefas\n- [ ] Tela de login\n- [ ] Tela de cadastro\n- [ ] Tratamento de erro e loading\n\n## Critérios de aceite\n- Usuário autenticado acessa área logada."
+  },
+  {
+    "title": "[Sprint 1] Mobile: onboarding (idioma nativo/alvo + meta)",
+    "labels": ["mobile", "onboarding", "sprint-1"],
+    "body": "## Objetivo\nCapturar contexto inicial do aluno.\n\n## Tarefas\n- [ ] Formulário em etapas\n- [ ] Persistir dados via API\n- [ ] Validação de campos\n\n## Critérios de aceite\n- Onboarding concluído salva perfil e meta inicial."
+  },
+  {
+    "title": "[Sprint 2] Backend: plano diário e tarefas",
+    "labels": ["backend", "learning", "sprint-2"],
+    "body": "## Objetivo\nFornecer rotina diária de estudo.\n\n## Tarefas\n- [ ] Modelar Lesson/Task/TaskSubmission\n- [ ] Endpoint de plano diário\n- [ ] Endpoint de submissão de tarefa\n\n## Critérios de aceite\n- API retorna tarefas por usuário e aceita submissão."
+  },
+  {
+    "title": "[Sprint 2] Mobile: home com tarefas e histórico",
+    "labels": ["mobile", "learning", "sprint-2"],
+    "body": "## Objetivo\nExibir jornada diária do aluno.\n\n## Tarefas\n- [ ] Home com tarefas do dia\n- [ ] Tela de submissão textual\n- [ ] Histórico de concluídas\n\n## Critérios de aceite\n- Usuário conclui tarefas e vê histórico."
+  },
+  {
+    "title": "[Sprint 3] IA: integrar correção de texto no endpoint /v1/ai/correct-text",
+    "labels": ["backend", "ai", "sprint-3"],
+    "body": "## Objetivo\nEntregar primeira feature de IA com valor real.\n\n## Tarefas\n- [ ] Chamar provedor de LLM\n- [ ] Aplicar rubrica (gramática, vocabulário, fluência)\n- [ ] Persistir feedback estruturado\n\n## Critérios de aceite\n- Submissão retorna feedback útil com score e melhorias."
+  },
+  {
+    "title": "[Sprint 3] Mobile: UI de feedback de correção",
+    "labels": ["mobile", "ai", "sprint-3"],
+    "body": "## Objetivo\nApresentar correção de forma pedagógica.\n\n## Tarefas\n- [ ] Seções por categoria de erro\n- [ ] Sugestão de reescrita\n- [ ] Ações de 'revisar de novo'\n\n## Critérios de aceite\n- Usuário entende erros e próximos passos claramente."
+  },
+  {
+    "title": "[Sprint 4] IA: gerar flashcards automáticos",
+    "labels": ["backend", "ai", "memory", "sprint-4"],
+    "body": "## Objetivo\nReforçar memorização com base em erros reais.\n\n## Tarefas\n- [ ] Integrar /v1/ai/generate-flashcards\n- [ ] Modelar Flashcard e agenda de revisão\n- [ ] Implementar repetição espaçada inicial\n\n## Critérios de aceite\n- Flashcards gerados e disponíveis para revisão diária."
+  },
+  {
+    "title": "[Sprint 4] Mobile: revisão diária de flashcards",
+    "labels": ["mobile", "memory", "sprint-4"],
+    "body": "## Objetivo\nExecutar rotina de revisão no app.\n\n## Tarefas\n- [ ] Lista de cartões do dia\n- [ ] Avaliação fácil/médio/difícil\n- [ ] Atualização da próxima revisão\n\n## Critérios de aceite\n- Ciclo completo de revisão funcional no app."
+  },
+  {
+    "title": "[Sprint 5] Conversação IA com voz (STT/TTS) v1",
+    "labels": ["backend", "mobile", "ai", "speech", "sprint-5"],
+    "body": "## Objetivo\nHabilitar speaking com tutor IA.\n\n## Tarefas\n- [ ] Sessão de chat contextual\n- [ ] Captura de áudio + transcrição\n- [ ] Resposta em texto/voz\n\n## Critérios de aceite\n- Usuário completa conversa curta com feedback."
+  },
+  {
+    "title": "[Sprint 6] Modo proficiência: simulados + diagnóstico",
+    "labels": ["backend", "mobile", "proficiency", "sprint-6"],
+    "body": "## Objetivo\nConectar estudo diário ao objetivo de certificação.\n\n## Tarefas\n- [ ] Simulados por exame e habilidade\n- [ ] Relatório de pontos fortes/lacunas\n- [ ] Recomendações de estudo\n\n## Critérios de aceite\n- Usuário recebe relatório acionável por habilidade."
+  }
+]
