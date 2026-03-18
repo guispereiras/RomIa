@@ -1,0 +1,29 @@
+{
+  "name": "@romia/mobile",
+  "version": "0.1.0",
+  "private": true,
+  "main": "expo/AppEntry",
+  "scripts": {
+    "dev": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "lint": "eslint . --ext .ts,.tsx",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@react-navigation/native": "^7.0.14",
+    "expo": "^53.0.0",
+    "expo-status-bar": "~2.0.1",
+    "react": "19.0.0",
+    "react-native": "0.79.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.0.0",
+    "@types/react-native": "^0.73.0",
+    "eslint": "^9.18.0",
+    "typescript": "^5.7.3",
+    "vitest": "^2.1.8"
+  }
+}

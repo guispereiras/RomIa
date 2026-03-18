@@ -1,0 +1,16 @@
+{
+  "name": "romia",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Tutor de idiomas com IA (mobile-first) com backend e expansão futura para web",
+  "packageManager": "pnpm@9.15.2",
+  "scripts": {
+    "dev:mobile": "pnpm --filter @romia/mobile dev",
+    "dev:api": "pnpm --filter @romia/api dev",
+    "dev:web": "pnpm --filter @romia/web dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck"
+  }
+}
